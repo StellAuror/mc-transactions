@@ -1,0 +1,63 @@
+body {
+  background: url('stone.png') no-repeat center center fixed;
+  background-size: cover;
+}
+.sidebar {
+  background: url('obsidian.jpg');
+  background-repeat: repeat-y;
+  background-size: 100%;
+  border: none; /* Usunięcie obramowania */
+  outline: none; /* Dodatkowo usunięcie konturu, jeśli istnieje */
+  box-shadow: none; /* Jeśli cień jest używany jako efekt obramowania */
+}
+
+.navbar {
+  background: url('obsidian.jpg');
+  background-repeat: repeat-x;
+  background-size: 100%;
+  border: none; /* Usunięcie obramowania */
+  outline: none; /* Dodatkowo usunięcie konturu, jeśli istnieje */
+  box-shadow: none; /* Jeśli cień jest używany jako efekt obramowania */
+}
+
+.bslib-page-title {
+  color: #ffffff;
+}
+
+.card {
+  background: #46464c;
+  border: 4px solid #2c2c2c; /* Ciemniejsze obramowanie */
+  border-radius: 0; /* Kwadratowy wygląd */
+  box-shadow: 4px 4px 0px #1a1a1a, /* Dolny cień dla głębi */
+              -4px -4px 0px #5a5a5a; /* Górny cień dla efektu światła */
+  position: relative;
+  padding: 15px;
+}
+
+.card::before,
+.card::after {
+  content: ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border: inherit;
+  z-index: -1;
+}
+
+.card::before {
+  top: 4px;
+  left: -4px;
+  transform: skewY(5deg); /* Przesunięcie dla efektu bocznych ścian */
+}
+
+.card::after {
+  top: -4px;
+  left: 4px;
+  transform: skewX(5deg);
+}
+
+.card-header {
+background: #313133;
+color: #fff;
+}
